@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="img/—Pngtree—islamic quran and calligraph of_5007422.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <h1 class="text-center text-white mt-3" id="heading-text">Al Quran</h1>
+
+  <div class="input-group mb-3 mx-auto" id="search-box">
+    <input type="text" class="form-control" id="search-input" placeholder="Search a Surah"
+      aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary ms-1" type="button" id="button-33" onclick="searchInput()">Search</button>
+  </div>
+
+  <!-- spinner -->
+  <div class="d-none d-flex justify-content-center mt-5 pt-5" id="spinner">
+    <div class="spinner-grow" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div id="loading-text" class="mt-4 text-center">
+  </div>
+
+  <div id="error-div"></div>
+
+  <div class="fixed-bottom text-center" id="playing">
+    <p>Audio is playing</p>
+    <p>We will stop the stream once a verse is fully recited</p>
+    <button id="close-button" class="mb-4" onclick="stopPlaying()">Stop Audio</button>
+  </div>
+
+  <div>
+    <div id="show-all-surahs" class="row row-cols-1 
+    row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 m-0"></div>
+    <div id="show-all"></div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="singleDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body" id="modalBody">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
